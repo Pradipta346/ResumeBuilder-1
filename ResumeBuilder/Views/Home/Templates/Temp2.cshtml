@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-2 | Modern</title>
+    <link id="themeStylesheet" rel="stylesheet" href="~/Content/temp2_css/temp2_default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <style>
+        .color-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+            .color-circle.selected {
+                border-color: black;
+            }
+    </style>
+    <script src="~/Scripts/script2.js"></script>
+</head>
+<body>
+
+    <nav class="buttons">
+        <a href="@Url.Action("Resumetemplates", "Home")"><button id="new-templateButton">New Template</button></a>
+        <a href="@Url.Action("Form", "Home")"><button id="change-detailButton">Change Details</button></a>
+    </nav>
+
+    <div class="color-selection" style="display: flex; justify-content: center; margin: 20px;">
+        <div class="color-circle" data-color="temp2_default" style="background-color: #737373;"></div>
+        <div class="color-circle" data-color="temp2_333" style="background-color: #333;"></div>
+    </div>
+
+    <div class="background-container">
+        <div class="left-column"></div>
+        <div class="right-column"></div>
+
+        <div class="container">
+            <div class="left-section">
+                <div class="profile-pic">
+                    <img alt="Profile Picture" id="profileImage">
+                </div>
+                <h1><span id="first"></span> <span id="middle"></span> <span id="last"></span></h1>
+                <h2 id="title"></h2>
+                <div class="contact-info">
+                    <p id="address">
+                        <i class="fas fa-map-marker-alt"></i> <span id="address-text"></span>
+                    </p>
+                    <p id="email">
+                        <i class="fas fa-envelope"></i> <span id="email-text"></span>
+                    </p>
+                    <p id="cell">
+                        <i class="fas fa-phone"></i> <span id="cell-text"></span>
+                    </p>
+                    <p id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i> <a href="#" class="plain-link" id="linkedin-link"></a>
+                    </p>
+                    <p id="github">
+                        <i class="fa-brands fa-github"></i> <a href="#" class="plain-link" id="github-link"></a>
+                    </p>
+                </div>
+                <div class="skills" id="skillsSection">
+                    <h3>Skills</h3>
+                    <ul id="skills"></ul>
+                </div>
+                <div class="languages" id="languageSection">
+                    <h3>Languages</h3>
+                    <ul id="languages"></ul>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="objective" id="summarySection">
+                    <h3>Objective</h3>
+                    <p id="summaryContainer"></p>
+                </div>
+                <div class="experience" id="experienceSection">
+                    <h3>Experience</h3>
+                    <div class="timeline" id="jobs"></div>
+                </div>
+                <div class="education" id="educationSection">
+                    <h3>Education</h3>
+                    <div class="timeline" id="educations"></div>
+                </div>
+                <div class="certifications" id="certificateSection">
+                    <h3>Certifications</h3>
+                    <ul id="certificate"></ul>
+                </div>
+                <div class="achievements" id="achievementSection">
+                    <h3>Achievements</h3>
+                    <div id="achievement"></div>
+                </div>
+                <div class="project" id="projectsSection">
+                    <h3>Projects</h3>
+                    <div class="timeline" id="projects"></div>
+                </div>
+                <div class="hobbies" id="hobbiesSection">
+                    <h3>Hobbies</h3>
+                    <ul id="hobbies"></ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="downloadBothButton">Download as PDF</button>
+    </div>
+</body>
+</html>

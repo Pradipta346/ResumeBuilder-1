@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-5 | Modern</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="~/Content/temp5.css">
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="~/Scripts/script5.js"></script>
+</head>
+<body>
+    <nav class="buttons">
+        <a href="@Url.Action("Resumetemplates", "Home")"><button id="new-templateButton">New Template</button></a>
+        <a href="@Url.Action("Form", "Home")"><button id="change-detailButton">Change Details</button></a>
+    </nav>
+    <div class="container">
+        <div class="header-content">
+            <div id="header" class="header"></div>
+            <div class="contact">
+                <p>
+                    <strong>
+                        <span id="address"><i class="fas fa-map-marker-alt"></i> <span id="address-text"></span></span> <span id="email"><i class="fas fa-envelope"></i> <span id="email-text"></span></span> <span id="cell"><i class="fas fa-phone"></i> <span id="cell-text"></span></span> <span id="linkedin"><i class="fa-brands fa-linkedin"></i> <a href="#" class="plain-link" id="linkedin-link"></a></span> <span id="github"><i class="fa-brands fa-github"></i> <a href="#" class="plain-link" id="github-link"></a></span>
+
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <section class="summary" id="summarySection">
+                    <h3>SUMMARY</h3>
+                    <p id="summaryContainer"></p>
+                </section>
+
+                <section class="skills" id="skillsSection">
+                    <h3>SKILLS</h3>
+                    <ul id="skills"></ul>
+                </section>
+
+                <section class="hobbies" id="hobbiesSection">
+                    <h3>HOBBIES</h3>
+                    <ul id="hobbies"></ul>
+                </section>
+
+                <section class="achievements" id="achievementsSection">
+                    <h3>ACHIEVEMENTS</h3>
+                    <ul id="achievements"></ul>
+                </section>
+                <section class="certifications" id="certificatesSection">
+                    <h3>CERTIFICATIONS</h3>
+                    <ul id="certifications"></ul>
+                </section>
+                <section class="language" id="languageSection">
+                    <h3>LANGUAGES</h3>
+                    <ul id="languages"></ul>
+                </section>
+            </div>
+            <div class="right-column">
+                <section class="experience" id="experienceSection">
+                    <h3>EXPERIENCE</h3>
+                    <div id="jobs" class="timeline"></div>
+                </section>
+                <section class="education" id="educationSection">
+                    <h3>EDUCATION</h3>
+                    <div id="educations" class="timeline"></div>
+                </section>
+
+                <section class="projects" id="projectsSection">
+                    <h3>PROJECTS</h3>
+                    <div id="projects" class="timeline"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="downloadBothButton">Download as PDF</button>
+    </div>
+</body>
+</html>

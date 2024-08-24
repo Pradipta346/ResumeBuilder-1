@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-6 | ATS</title>
+    <link rel="stylesheet" href="~/Content/temp6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="~/Scripts/script6.js"></script>
+</head>
+<body>
+    <div class="buttons top-buttons">
+        <a href="@Url.Action("Resumetemplates", "Home")"><button id="new-templateButton">New Template</button></a>
+        <a href="@Url.Action("Form", "Home")"><button id="change-detailButton">Change Details</button></a>
+    </div>
+
+    <div class="container">
+        <h1><span id="first"></span> <span id="middle"></span> <span id="last"></span></h1>
+        <h2 id="title"></h2>
+        <div class="contact" id="contact-info">
+            <p id="address"><i class="fas fa-map-marker-alt"></i></p>
+            <p id="email"><i class="fas fa-envelope"></i></p>
+            <p id="cell"><i class="fas fa-phone"></i></p>
+            <p id="linkedin"><i class="fa-brands fa-linkedin"></i></p>
+            <p id="github"><i class="fa-brands fa-github"></i></p>
+        </div>
+        <hr>
+        <div class="section-title" id="summarySection">SUMMARY</div>
+        <div class="content" id="summaryContainer"></div>
+        <div class="section-title" id="skillsSection">SKILLS</div>
+        <div class="content" id="skills"></div>
+        <div class="section-title" id="educationSection">EDUCATION</div>
+        <div class="content" id="education"></div>
+        <div class="section-title" id="experienceSection">EXPERIENCE</div>
+        <div class="content" id="jobs"></div>
+        <div class="section-title" id="projectsSection">PROJECTS</div>
+        <div class="content" id="projects"></div>
+        <div class="section-title" id="achievementsSection">ACHIEVEMENTS</div>
+        <div class="content" id="achievements"></div>
+        <div class="section-title" id="certificatesSection">CERTIFICATIONS</div>
+        <div class="content" id="certifications"></div>
+        <div class="section-title" id="hobbiesSection">HOBBIES</div>
+        <div class="content" id="hobbies"></div>
+        <div class="section-title" id="languageSection">LANGUAGES</div>
+        <div class="content" id="langs"></div>
+    </div>
+
+    <div class="buttons bottom-buttons">
+        <button id="downloadBothButton">Download as PDF</button>
+    </div>
+</body>
+</html>
+

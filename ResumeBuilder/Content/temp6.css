@@ -1,0 +1,109 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the container horizontally */
+    background-color: #FAF9F6;
+}
+
+.container {
+    max-width:800px;
+    max-width: 800px;
+    min-width: 800px;
+    background-color: #FFFFFF;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5px; /* Reduce the bottom margin for tighter spacing */
+}
+
+h2 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0; /* Remove any default top margin */
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between the contact items */
+    margin-bottom: 20px;
+    font-size: 14px;
+    flex-wrap: wrap; /* Allows wrapping to the next line if the screen is too small */
+}
+
+.section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.content {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.experience-item, .education-item, .project-item, .extra-item {
+    margin-bottom: 10px;
+}
+
+.role, .degree {
+    font-weight: bold;
+}
+
+.dates {
+    float: right;
+    margin-right: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.skills, .other-skills {
+    list-style: none;
+    padding-left: 0;
+}
+
+    .skills li, .other-skills li {
+        margin-bottom: 5px;
+    }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+    .buttons button {
+        background-color: black;
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 15px 32px; /* Some padding */
+        text-align: center; /* Centered text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Get the elements to line up horizontally */
+        font-size: 16px; /* Increase font size */
+        margin: 20px 2px; /* Add some margin with space above */
+        cursor: pointer; /* Pointer/hand icon on hover */
+        border-radius: 12px; /* Rounded corners */
+    }
+
+    .buttons.top-buttons {
+        margin-top: 10px;
+    }
+
+    .buttons.bottom-buttons {
+        margin-top: 10px;
+    }

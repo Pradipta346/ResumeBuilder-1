@@ -1,0 +1,98 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/Content/temp8.css">
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="~/Scripts/script8.js"></script>
+</head>
+<body>
+    <nav class="buttons">
+        <a href="@Url.Action("Resumetemplates", "Home")"><button id="new-templateButton">New Template</button></a>
+        <a href="@Url.Action("Form", "Home")"><button id="change-detailButton">Change Details</button></a>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <div class="header-bg">
+                <h1><span id="first"></span> <span id="middle"></span> <span id="last"></span></h1>
+                <h2 id="title"></h2>
+                <section id="summarySection">
+                    <h3>Summary</h3>
+                    <p id="summaryContainer"></p>
+                </section>
+            </div>
+            <div class="content">
+                <section id="experienceSection">
+                    <h3>EXPERIENCE</h3>
+                    <div id="jobs"></div>
+                </section>
+                <section id="educationSection">
+                    <h3>EDUCATION</h3>
+                    <div id="educations"></div>
+                </section>
+                <section id="projectsSection">
+                    <h3>PROJECTS</h3>
+                    <div id="projects"></div>
+                </section>
+                <section id="achievementSection">
+                    <h3>ACHIEVEMENTS</h3>
+                    <div id="achievement"></div>
+
+                </section>
+                <section id="certificateSection">
+                    <h3>CERTIFICATIONS</h3>
+                    <div id="certificate"></div>
+                </section>
+            </div>
+        </div>
+        <div class="right">
+            <div class="profile-pic">
+                <img alt="Profile Picture" id="profileImage">
+            </div>
+            <section id="contact-section">
+                <h3>CONTACT</h3>
+                <p id="address">
+                    <i class="fas fa-map-marker-alt"></i> <span id="address-text"></span>
+                </p>
+                <p id="email">
+                    <i class="fas fa-envelope"></i> <span id="email-text"></span>
+                </p>
+                <p id="cell">
+                    <i class="fas fa-phone"></i> <span id="cell-text"></span>
+                </p>
+                <p id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i> <a href="#" class="plain-link" id="linkedin-link"></a>
+                </p>
+                <p id="github">
+                    <i class="fa-brands fa-github"></i> <a href="#" class="plain-link" id="github-link"></a>
+                </p>
+
+
+            </section>
+            <section id="skillsSection">
+                <h3>SKILLS</h3>
+                <div id="skills"></div>
+            </section>
+            <section id="languageSection">
+                <h3>LANGUAGES</h3>
+                <p id="languages"></p>
+            </section>
+            <section id="hobbiesSection">
+                <h3>HOBBIES</h3>
+                <p id="hobbies"></p>
+            </section>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="downloadBothButton">Download as PDF</button>
+    </div>
+</body>
+</html>

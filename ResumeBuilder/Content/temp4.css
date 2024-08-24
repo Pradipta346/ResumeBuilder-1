@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body {
+    font-family:"Lato", sans-serif ;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 1100px;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #97bbd9;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0;
+    font-size: 2.5em;
+    color: #164c78;
+}
+
+.header h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+
+}
+
+.header p {
+    margin: 10px 0;
+}
+
+.Links {
+    text-align: center;
+}
+
+.Links p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+.column h2 {
+    border-bottom: 2px solid #97bbd9;
+    padding-bottom: 5px;
+    color: #164c78;
+}
+
+.column h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.column p, .column ul {
+    margin: 10px 0;
+}
+
+.column ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+    
+.buttons button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ede9e98e 0 -3px 0 inset;
+    transform: translateY(-2px)
+}
+.buttons button {
+    background-color: hsl(0, 0%, 0%); 
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get the elements to line up horizontally */
+    font-size: 16px; /* Increase font size */
+    margin: 20px 2px 4px 2px; /* Add some margin with space above */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 12px; /* Rounded corners */
+}
+
+.plain-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}

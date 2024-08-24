@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../Content/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbarr bg-white">
+        <div class="containerr">
+            <div class="navbar-content">
+                <div class="brand-and-toggler">
+                    <a href="index.html" class="navbarr-brand">
+                        <img src="~/images/logo.png" class="navbarr-brand-icon">
+                        <span class="navbarr-brand-text">Make<span>resume.</span>
+                    </a>
+                    <!--<button type="button" class="navbar-toggler-btn">
+                        <div class="bars">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </button>-->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--header part-->
+    <header class="header bg-bright" id="header">
+        <div class="container">
+            <div class="header-context text-center">
+                <br>
+                <h5 class="text-uppercase text-blue-dark fs-17 fw-6 ls-1">Infinite Computer Solutions</h5>
+                <h1 class="lg-little">Online Resume Builder</h1>
+                <p class="text-dark fs-18">Transform your job search with our seamless online resume builder, making you stand out effortlessly!</p>
+                <br>
+                <a href="@Url.Action("Form", "Home")" class="btn btn-primary text-uppercase">Create My Resume</a>
+                <br>
+                <img src="~/images/resume-template.png">
+            </div>
+        </div>
+    </header>
+    <!-- Footer part -->
+    <footer class="footer bg-white">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="fs-15">&copy;Copyright 2024.All Rights Reserved by - <span>Make<span>resume.</span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.background-container {
+    background: #e0e0e0;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    width: 83%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    min-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #fff;
+    min-height: 1200px;
+}
+
+.left-section {
+    background: #333; /*rgb(115,115,115)*/
+    color: white;
+    padding: 30px;
+    width: 200px;
+    text-align: left;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 20px auto;
+}
+
+.contact-info {
+    margin-top: -10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+    .contact-info p {
+        margin: 5px 0;
+    }
+
+.right-section {
+    background: #ffff;
+    padding: 30px;
+    flex: 1;
+}
+
+    .right-section h3 {
+        margin-top: 30px;
+    }
+
+.experience, h3 {
+    margin-top: 20px;
+}
+
+.languages, h3 {
+    margin-top: 30px;
+    margin-left: 24px;
+}
+
+.skills {
+    margin-left: 24px;
+}
+
+h1, h2, h3, h4, h5, p, ul {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Garnet', sans-serif;
+}
+
+h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        width: 2px;
+        height: 100%;
+        background: #ccc;
+        top: 0;
+    }
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -23px;
+        width: 5px;
+        height: 5px;
+        border: 2px solid #333;
+        border-radius: 50%;
+        background: #000000;
+    }
+
+    .timeline-item h4 {
+        margin-bottom: 5px;
+    }
+
+ul {
+    padding-left: 20px;
+}
+
+    ul li {
+        list-style-type: disc;
+        margin-bottom: 5px;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+#skills {
+    padding-left: 0px;
+}
+
+    #skills span {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #61595997;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 10px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+    .buttons button:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #1a0505 0 -3px 0 inset;
+        transform: translateY(-2px)
+    }
+
+    .buttons button {
+        background-color: #333;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 20px 2px 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+
+.plain-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}

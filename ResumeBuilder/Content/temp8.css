@@ -1,0 +1,161 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 1200px;
+}
+
+.left .header-bg {
+  padding: 0px;
+  background-color: #e6bf81;
+  color: #000000cf;
+  margin: 0;
+  padding: 20px;
+}
+
+.left .content {
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.right {
+  padding: 20px;
+}
+
+.left {
+  width: 70%;
+  border-right: 4px solid #f4f4f4;
+  background-color: #f4f4f4;
+}
+
+.header-bg h1, .header-bg h2 {
+  margin: 0;
+  color: inherit;
+}
+.header-bg h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 20px !important;
+}
+
+h1 span {
+  color: #000000;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 23px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+h3 {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.right {
+  width: 30%;
+  background-color: #f0d7af;
+  color: #000000cf;
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 190px;
+  height: 190px;
+  margin: 20px 0;
+  border-radius: 50%;
+  border: 4px solid #000000;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 10px 0 20px 20px;
+  padding: 0;
+}
+
+.right section {
+  margin-bottom: 20px; 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-item, .education-item, .achievement-item, .project-item, .certification-item {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+
+.experience-details, .education-details, .achievement-details, .project-details, .certification-details {
+  padding-left: 30px;
+  margin-top: -10px;
+}
+
+.certification-details, p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.achievement-details {
+  margin-top: 10px;
+  line-height: 0;
+}
+
+#summary {
+  line-height: 1;
+  font-size: 20px;
+}
+
+.plain-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+    .buttons button:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #1a0505 0 -3px 0 inset;
+        transform: translateY(-2px)
+    }
+
+    .buttons button {
+        background-color: rgb(115, 115, 115);
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 15px 32px; /* Some padding */
+        text-align: center; /* Centered text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Get the elements to line up horizontally */
+        font-size: 16px; /* Increase font size */
+        margin: 20px 2px 4px 2px; /* Add some margin with space above */
+        cursor: pointer; /* Pointer/hand icon on hover */
+        border-radius: 12px; /* Rounded corners */
+    }

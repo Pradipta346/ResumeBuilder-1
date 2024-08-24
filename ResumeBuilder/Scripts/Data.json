@@ -1,0 +1,367 @@
+{
+
+	"JobPositionSeeker": {
+
+		"DebugToDST": "true",
+
+		"JobPositionSeekerId": "155741696",
+
+		"E-mail": "^5BC56A3BC94094CDF7ECC3A86678998B2AD2E8A5616F963E1D600302EDF54ECF03E431EAD67831AFA8F6F00D04F91EA33FEB9C6928509EBD2F03F40C8429341D",
+
+		"PersonalData": {
+
+			"PersonName": {
+
+				"GivenName": "Damon",
+
+				"FamilyName": "Salvatore",
+
+				"MiddleName": "Francesco"
+
+			},
+
+			"HomeNumber": {
+
+				"TelNumber": "8247830899"
+
+			},
+
+			"PostalAddress": {
+
+				"CountryId": "8",
+
+				"CountryCode": "India",
+
+				"DeliveryAddress": {
+
+					"AddressLine": [
+
+						"Ramanayyapeta",
+						"Kakinada"
+
+					]
+
+				},
+
+				"PostalCode": "",
+
+				"Region": "",
+
+				"FullState": "",
+
+				"Municipality": ""
+
+			},
+
+			"WorkNumber": {
+
+				"TelNumber": ""
+
+			},
+
+			"FaxNumber": {
+
+				"TelNumber": ""
+
+			},
+
+			"CellNumber": {
+
+				"TelNumber": ""
+
+			},
+
+			"HomePage": "",
+
+			"_Language": "1"
+
+		},
+
+		"BrassRing": {
+
+			"UserId": "^9D36879B62EB66E93A0BE880C0A3A9EA",
+
+			"Password": "^^2D92UAR9PNzpzM4xlM6JrdNd+b3rJ1Kx9EVzGX99JNTnDqYWkZbUdGLw8HuWw/h7VBJzyDhmjxwraTa1yRxGQw==^^",
+
+			"Confidential": "No",
+
+			"BREN": "yes",
+
+			"Blocking": {
+
+				"EmailUpdate": "no"
+
+			},
+
+			"Application": {
+
+				"Id": "",
+
+				"ProcessId": ""
+
+			},
+
+			"Security": {
+
+				"Question": {
+
+					"Id": "1",
+
+					"Answer": "^EB01326AA0D46267C2A72B96F9D2298411437C93618DB17AE16BE1CF0B81C43A"
+
+				},
+
+				"SecAnsEncrypt": "1"
+
+			},
+
+			"Partner": {
+
+				"PartnerId": "25460",
+
+				"SiteId": "14540",
+
+				"ActiveResume": "",
+
+				"ActiveCoverLetter": "",
+
+				"AgencyId": "",
+
+				"AgencyUserId": "",
+
+				"AgencyName": "",
+
+				"SiteLocale": "",
+
+				"EntUserId": "",
+
+				"SendElink": "",
+
+				"Resumekey": "",
+
+				"JobsApplied": "",
+
+				"SubmissionId": "",
+
+				"AgencyByReq": "",
+
+				"TimeStamps": {
+
+					"CreateDate": "7/11/2024 6:57:00 AM",
+
+					"RevisedDate": "7/11/2024 6:57:00 AM"
+
+				},
+
+				"CandActivity": {
+
+					"CreateAccount": "1",
+
+					"Step3": "1",
+
+					"JobApply": "0",
+
+					"EEO": "0",
+
+					"Education": "0",
+
+					"Experience": "0",
+
+					"ResumeManager": "0",
+
+					"SubmitNow": "0",
+
+					"SecurityQuestion": "1",
+
+					"LastBrowser": "Microsoft Edge (Desktop)",
+
+					"LastStep": "",
+
+					"Source": ""
+
+				},
+
+				"Questions": {
+
+					"Language": {
+
+						"_type": "1"
+
+					}
+
+				},
+
+				"_status": "0"
+
+			},
+
+			"PronunciationKey": {
+
+				"FirstName": "",
+
+				"LastName": "",
+
+				"_Language": "1"
+
+			},
+
+			"CandidateStackingField": {
+
+				"_encrypted": "0"
+
+			}
+
+		},
+
+		"Resume": {
+
+			"StructureResume": {
+
+				"EmploymentHistory": {
+
+					"Employment": [
+
+						{
+
+							"PositionTitle": "Software Engineer Intern",
+
+							"EmployerName": "Infinite Computer Solutions",
+
+							"Responsibilities": "Worked on Resume Builder Project and integrated it into Brassring ATS.",
+
+							"Location": "Visakhapatnam",
+
+							"EffectiveDate": {
+
+								"StartDate": {
+
+									"Date": "2024"
+
+								},
+
+								"EndDate": {
+
+									"Date": "2024"
+
+								}
+
+							},
+
+							"MostRecent": ""
+
+						},
+
+						{
+
+							"PositionTitle": "Software Development Engineer Intern",
+
+							"EmployerName": "Amazon",
+
+							"Responsibilities": "Worked on the Product Recommendation Efficiency Project and integrated it to Amazon Ecommerce Application.",
+
+							"Location": "Hyderabad",
+
+							"EffectiveDate": {
+
+								"StartDate": {
+
+									"Date": "2023"
+
+								},
+
+								"EndDate": {
+
+									"Date": "2023"
+
+								}
+
+
+							},
+
+							"MostRecent": "1"
+
+						}
+
+					]
+
+				},
+
+				"EducationQualifs": {
+
+					"SchoolOrInstitution": [
+						{
+
+							"SchoolName": "JNTU College of Engineering",
+
+							"EduMajor": "CSE",
+
+							"EduDegree": "Bachelor's of Technology",
+
+							"GPA": "8.5",
+
+							"City": "Kakinada",
+
+							"EffectiveDate": {
+								"StartDate": {
+
+									"Date": "2021"
+
+								},
+
+								"EndDate": {
+
+									"Date": "2025"
+
+								}
+
+							},
+
+							"MostRecent": ""
+
+						},
+						{
+							"SchoolName": "Sri Chaitanya Junior College",
+
+							"EduMajor": "MPC",
+
+							"EduDegree": "Intermediate",
+
+							"GPA": "9.0",
+
+							"City": "Kakinada",
+
+							"EffectiveDate": {
+								"StartDate": {
+
+									"Date": "2019"
+
+								},
+								"EndDate": {
+
+									"Date": "2021"
+
+								}
+
+							},
+
+							"MostRecent": "1"
+						}
+					]
+
+				},
+
+				"Skills": "Java||JavaScript||Node.Js||C||C++",
+
+				"SkillsInfo": "Java||JavaScript||Node.Js||C||C++"
+
+			},
+
+			"_Language": "1"
+
+		},
+
+		"_status": "active"
+
+	}
+
+}

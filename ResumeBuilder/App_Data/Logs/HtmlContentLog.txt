@@ -1,0 +1,235 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="/Content/temp1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+       $(document).ready(function() {
+    $('#printButton').on('click', function() {
+        // Optionally, you might want to get specific part of the HTML rather than the whole document
+        var htmlContent = $('html').html(); // Or use a more specific selector
+
+        $.ajax({
+            type: 'POST',
+            url: '/Home/DownloadPDF',
+            data: { html: htmlContent },
+            success: function(response) {
+                var blob = new Blob([response], { type: 'application/pdf' });
+                var link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = 'Resume.pdf';
+                link.click();
+            },
+            error: function(xhr, status, error) {
+                alert('Error generating PDF: ' + xhr.responseText + '\n' + error);
+            }
+        });
+    });
+});
+
+    </script>
+    <script src="/Scripts/script1.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="buttons">
+
+        <button type="new-template" id="new-templateButton">New Template</button>
+
+        <button type="change-detail" id="change-detailButton">Change Detail</button>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="header">
+
+        </div>
+
+        <div class="contact-section">
+
+            <div>
+
+                <h1>
+
+                    <span id="first">Damon</span>
+
+                    <span id="middle">Francesco</span>
+
+                    <span id="last">Salvatore</span>
+
+                </h1>
+
+                <h2 id="title" style="display: none;"></h2>
+
+            </div>
+
+            <div class="contact-info">
+
+                <p id="address">
+
+                    <i class="fas fa-map-marker-alt"></i>
+
+                , </p>
+
+                <p id="email" style="display: none;">
+
+                    <i class="fas fa-envelope"></i>
+
+                </p>
+
+                <p id="cell">
+
+                    <i class="fas fa-phone"></i>
+
+                8765456778</p>
+
+                <p id="linkedin" style="display: none;">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </p>
+
+                <!---<p id="github">
+
+                   <i class="fa-brands fa-github"></i>
+
+                 </p> -->
+
+            </div>
+
+        </div>
+
+        <div class="section" id="summarySection" style="display: none;">
+
+            <h3>SUMMARY</h3>
+
+            <div class="content">
+
+                <hr>
+
+                <div id="summaryContainer" style="display: none;"></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="experienceSection">
+
+            <h3>EXPERIENCE</h3>
+
+            <div class="content">
+
+                <hr>
+
+                <div id="jobs"><h4> SDE | ABC | undefined <br> 2022 - 2024</h4><ul><li>Improving the health care domain</li></ul><h4> software developer | infinite computer solutions | undefined <br> 2024 - 2024</h4><ul><li>Resume builder</li></ul></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="skillsSection">
+
+            <h3>SKILLS</h3>
+
+            <div class="content">
+
+                <hr>
+
+                <div id="skills"><ul><li>Frontend Development/Scripting - HTML</li><li>Html</li><li>CSS</li><li>C</li><li>C++</li></ul></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="educationSection">
+
+            <h3>EDUCATION</h3>
+
+            <div class="content">
+
+                <hr>
+
+                <div id="educations"><div><b>Bachelor's degree</b></div><ul><li>JNTU College of Engineering | CSE | 9.0</li><li>undefined</li></ul><div><b>Intermediate</b></div><ul><li>Sri Chaitanya Junior College | MPC | 9.0</li><li>undefined</li></ul></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="certificateSection" style="display: none;">
+
+            <h3>CERTIFICATION</h3>
+
+            <div class="content">
+
+                <hr>
+
+                <div id="certificate" style="display: none;"></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="projectSection" style="display: none;">
+
+            <h3>PROJECTS</h3>
+
+            <div class="content">
+
+                <hr>
+
+                <div id="project"></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="achievementSection" style="display: none;">
+
+            <h3>ACHIEVEMENTS</h3>
+
+            <div class="content">
+
+                <hr>
+
+                <div id="achievement"></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="hobbySection" style="display: none;">
+
+            <h3>HOBBIES</h3>
+
+            <div class="content">
+
+                <hr>
+
+                <div id="hobby" style="display: none;"></div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button type="print" id="printButton">Print</button>
+
+    </div>
+
+
+
+
+</body>

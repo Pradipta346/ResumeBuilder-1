@@ -1,0 +1,410 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left .header-bg {
+            padding: 0px;
+            background-color: #e6bf81;
+            color: #000000cf;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .left .content {
+            padding: 20px;
+            padding-top: 0px;
+        }
+
+        .right {
+            padding: 20px;
+        }
+
+        .left {
+            width: 70%;
+            border-right: 4px solid #f4f4f4;
+            background-color: #f4f4f4;
+        }
+
+        .header-bg h1, .header-bg h2 {
+            margin: 0;
+            color: inherit;
+        }
+
+        .header-bg h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 40px;
+            margin-top: 20px !important;
+        }
+
+            h1 span {
+                color: #000000;
+                font-weight: 600;
+            }
+
+        h2 {
+            font-size: 23px;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+
+        h3 {
+            border-bottom: 2px solid #000000;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        .right {
+            width: 30%;
+            background-color: #f0d7af;
+            color: #000000cf;
+            text-align: center;
+        }
+
+        .profile-picture img {
+            width: 190px;
+            height: 190px;
+            margin: 20px 0;
+            border-radius: 50%;
+            border: 4px solid #000000;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 10px 0 20px 20px;
+            padding: 0;
+        }
+
+        .right section {
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .experience-item, .education-item, .achievement-item, .project-item, .certification-item {
+            display: flex;
+            /* justify-content:space-between; */
+            margin-bottom: 20px;
+        }
+
+        .experience-details, .education-details, .achievement-details, .project-details, .certification-details {
+            padding-left: 20px;
+            margin-top: -10px;
+        }
+
+        .certification-details, p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .achievement-details {
+            margin-top: 10px;
+            line-height: 0;
+        }
+
+        #summary {
+            line-height: 1;
+            font-size: 20px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function savePageAsHTML() {
+
+    const htmlContent = document.documentElement.outerHTML;
+
+    $.ajax({
+        url: '/Home/SaveHtml',
+        type: 'POST',
+        data: { htmlContent: htmlContent },
+        success: function (response) {
+            alert('HTML content saved successfully!');
+        },
+        error: function (error) {
+            console.error('Error saving HTML content:', error);
+            alert('Failed to save HTML content.');
+        }
+    });
+}
+
+
+        $(document).ready(function () {
+            // Sample data
+            const resumeData = {
+                firstName: "Amit",
+                middleName: "Kumar",
+                lastName: "Sinha",
+                jobTitle: "Accounts Executive",
+                profilePicture: "OIP (1).jpg",
+                summary: "Accurate and immensely motivated Finance student. Highly skilled at generating and analyzing financial reports, leading cash flow analysis, and refining tax plans.",
+                personalInfo: {
+                    address: "E2345, Cleo County, Noida",
+                    phone: "909 090 9090",
+                    email: "amit.sinha@abc.com",
+                    linkedin: "amitsinha@linkedin.com",
+                    github: "amitsinha@github.com"
+                },
+                skills: [
+                    { title: "HTML" }, { title: "CSS" }, { title: "JAVASCRIPT" }, { title: "JAVA" }, { title: "C++" }, { title: "C" }
+                ],
+                languages: ["English", "Spanish", "German", "Japanese"],
+                hobbies: "Photography, Traveling, Reading Historical Novels",
+                workExperience: [
+                    {
+                        date: "2020 - Present",
+                        title: "Jr. Accounts Executive",
+                        company: "Joy 4 Us Toys, Noida, UP",
+                        duties: [
+                            "Collect, interpret and review financial information",
+                            "Predict financial trends",
+                            "Reports for management and stakeholders"
+                        ]
+                    }
+                ],
+                education: [
+                    {
+                        date: "2017 - 2018",
+                        degree: "MA in Economics",
+                        details: "Batch Topper, Northern University",
+                        cgpa: "CGPA: 9.4/10"
+                    }
+                ],
+                achievements: [
+                    {
+                        date: "2022-02-02",
+                        details: [
+                            "Best Employee of the Year, Joy 4 Us Toys",
+                            "Successfully led a project to streamline financial reporting processes"
+                        ]
+                    }
+                ],
+                projects: [
+                    {
+                        date: "2021",
+                        title: "Financial Analysis Tool Development",
+                        description: "Developed a tool to automate the analysis of financial data, improving accuracy and efficiency."
+                    }
+                ],
+                certification: [
+                    {
+                        title: "Introduction to Database",
+                    },
+                    {
+                        title: "Introduction to IoT"
+                    },
+                    {
+                        title: "Cloud computing"
+                    }
+                ]
+            };
+
+            // Populate data
+            $('#first').text(resumeData.firstName);
+            $('#middle').text(resumeData.middleName);
+            $('#last').text(resumeData.lastName);
+            $('#title').text(resumeData.jobTitle);
+            $('#profile-picture').attr('src', resumeData.profilePicture);
+            $('#summary').text(resumeData.summary);
+            $("#address").eq(0).append(resumeData.personalInfo.address);
+            $("#cell").eq(0).append(resumeData.personalInfo.phone);
+            $("#email").eq(0).append(resumeData.personalInfo.email);
+            $("#linkedin").eq(0).append(resumeData.personalInfo.linkedin);
+            $("#github").eq(0).append(resumeData.personalInfo.github);
+
+
+            // Skills
+            resumeData.skills.forEach(skill => {
+                const skillHtml = `<div class="skill-title"><p><strong>${skill.title}</strong></p></div>`;
+                $('#skills-section').append(skillHtml);
+            });
+            // Languages
+            const languagesHtml = resumeData.languages.join(", ");
+            $('#languages').text(languagesHtml);
+
+            // Hobbies
+            $('#hobbies').text(resumeData.hobbies);
+
+            // Work Experience
+            resumeData.workExperience.forEach(exp => {
+                const dutiesHtml = exp.duties.map(duty => `<li>${duty}</li>`).join('');
+                const workHtml = `
+            <div class="experience-item">
+                <div>
+                    <h4>${exp.date}</h4>
+                </div>
+                <div class="experience-details">
+                    <h5>${exp.title}</h5>
+                    <p>${exp.company}</p>
+                    <ul>${dutiesHtml}</ul>
+                </div>
+            </div>
+        `;
+                $('#work-experience-section').append(workHtml);
+            });
+
+            // Education
+            resumeData.education.forEach(edu => {
+                const eduHtml = `
+            <div class="education-item">
+                <div>
+                    <h4>${edu.date}</h4>
+                </div>
+                <div class="education-details">
+                    <h5>${edu.degree}</h5>
+                    <p>${edu.details}</p>
+                    <p>${edu.cgpa}</p>
+                </div>
+            </div>
+        `;
+                $('#education-section').append(eduHtml);
+            });
+
+            // Achievements
+            resumeData.achievements.forEach(achievement => {
+                const detailsHtml = achievement.details.map(detail => `<p>${detail}</p>`).join('');
+                const achievementHtml = `
+            <div class="achievement-item">
+                <div class="achievement-details">
+                    <h5>${achievement.date}</h5>
+                    <p>${achievement.details}</p>
+                </div>
+            </div>
+        `;
+                $('#achievements-section').append(achievementHtml);
+            });
+
+            // Projects
+            resumeData.projects.forEach(project => {
+                const projectHtml = `
+            <div class="project-item">
+                <div class="project-details">
+                    <h5>${project.title}</h5>
+                    <p>${project.description}</p>
+                </div>
+            </div>
+        `;
+                $('#projects-section').append(projectHtml);
+            });
+
+            // Certifications
+            resumeData.certification.forEach(cert => {
+                const certHtml = `
+        <div class="certification-item">
+          <div class="certification-details">
+          <p>${cert.title}</p>
+          </div>
+        </div>
+        `;
+                $('#certification-section').append(certHtml);
+            });
+        });
+        $(document).ready(function () {
+        $('#printButton').click(function () {
+    window.location.href = '/Home/DownloadPdf';
+});
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="header-bg">
+                <h1><span id="first">Amit</span> <span id="middle"></span> <span id="last"></span></h1>
+                <h2 id="title">
+                    <h2>
+                        <section id="summary-section">
+                            <h3>Summary</h3>
+                            <p id="summary"></p>
+                        </section>
+            </div>
+            <div class="content">
+                <section id="work-experience-section">
+                    <h3> EXPERIENCE</h3>
+                </section>
+                <section id="education-section">
+                    <h3>EDUCATION</h3>
+                </section>
+                <section id="projects-section">
+                    <h3>PROJECTS</h3>
+                </section>
+                <section id="achievements-section">
+                    <h3>ACHIEVEMENTS</h3>
+                </section>
+                <section id="certification-section">
+                    <h3>CERTIFICATIONS</h3>
+                </section>
+            </div>
+        </div>
+        <div class="right">
+            <section id="contact-section">
+                <h3>CONTACT</h3>
+                <p id="address">
+                    <i class="fas fa-map-marker-alt"></i>
+                </p>
+                <p id="email">
+                    <i class="fas fa-envelope"></i>
+                </p>
+                <p id="cell">
+                    <i class="fas fa-phone"></i>
+                </p>
+                <p id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </p>
+                <p id="github">
+                    <i class="fa-brands fa-github"></i>
+                </p>
+
+
+            </section>
+            <section id="skills-section">
+                <h3>SKILLS</h3>
+            </section>
+            <section id="languages-section">
+                <h3>LANGUAGES</h3>
+                <p id="languages"></p>
+            </section>
+            <section id="hobbies-section">
+                <h3>HOBBIES</h3>
+                <p id="hobbies"></p>
+            </section>
+        </div>
+    </div>
+    <button id="printButton">Download as PDF</button>
+    <button id="saveButton" onclick="savePageAsHTML()">Save as HTML</button>
+
+</body>
+</html>
+

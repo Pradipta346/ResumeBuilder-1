@@ -1,0 +1,185 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.resume {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto; /* Adjusted margin for more top and bottom space */
+    padding: 40px; /* Increased padding for a better layout */
+    background: linear-gradient(0deg, rgba(224,255,255,1) 0%, rgba(228,160,239,0.19295640619529064) 100%);
+    border-radius: 15px; /* Added border-radius for a softer look */
+    min-height: 1350px;
+}
+
+.header {
+    margin-top: 30px; /* Reduced margin-top for better spacing */
+    text-align: left;
+    margin-bottom: 50px; /* Increased margin-bottom for better separation */
+}
+
+.name {
+    font-size: 80px; /* Slightly reduced font-size for better fit */
+    color:black;
+    margin: 0;
+    flex-wrap: wrap;
+   
+   
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between the contact items */
+    flex-wrap: wrap; /* Allows wrapping to the next line if the screen is too small */
+}
+.contact p {
+    margin: 0; /* Remove default margin from paragraphs */
+    padding: 5px; /* Add padding for better spacing around the text */
+}
+
+.title {
+    font-size: 24px;
+    color: #555;
+    margin-top: 0; /* Adjusted margin-top to align better */
+   
+}
+
+.skills-section {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px; /* Added margin-top for space between sections */
+}
+
+.skills-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 15px; /* Adjusted gap for tighter grid layout */
+}
+
+.skill-item {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #333; /* Bottom border line */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 40px; /* Added margin-top for spacing between content sections */
+}
+
+.left-column {
+    width: 48%; /* Adjusted width for better balance between columns */
+    background-color: transparent;
+    margin-top: -30px;
+    position: relative; /* Set position to relative */
+    left: -10px; /* Adjust this value as needed to shift left */
+}
+
+.right-column {
+    width: 48%; /* Adjusted width for better balance between columns */
+    margin-top: -60px;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 15px; /* Slightly increased margin-bottom for better separation */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Updated padding for heading lines */
+.right-column h2::after,
+.left-column h2::after {
+    content: "";
+    flex-grow: 1;
+    height: 4px;
+    background-color: black;
+    margin-left: 20px;
+}
+
+.objective,
+.education-list,
+.skills-list,
+.certifications-list,
+.achievements-list,
+.hobbies-list,
+.languages-list,
+.experience-list,
+.projects-list {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px; /* Increased margin-bottom for more spacing between items */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.date {
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+
+.degree,
+.title-1 {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.experience-section {
+    margin-top: 50px; /* Increased margin-top for clearer section separation */
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+    .buttons button {
+        background-color: black;
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 15px 32px; /* Some padding */
+        text-align: center; /* Centered text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Get the elements to line up horizontally */
+        font-size: 16px; /* Increase font size */
+        margin: 20px 2px; /* Add some margin with space above */
+        cursor: pointer; /* Pointer/hand icon on hover */
+        border-radius: 12px; /* Rounded corners */
+    }
+
+    .buttons.top-buttons {
+        margin-top: 10px;
+    }
+
+    .buttons.bottom-buttons {
+        margin-top: 10px;
+    }
+.plain-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}

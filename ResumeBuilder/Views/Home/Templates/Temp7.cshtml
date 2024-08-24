@@ -1,0 +1,115 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-7 | Modern</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/Content/temp7.css">
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="~/Scripts/script7.js"></script>
+</head>
+<body>
+    <div class="buttons top-buttons">
+        <a href="@Url.Action("Resumetemplates", "Home")"><button id="new-templateButton">New Template</button></a>
+        <a href="@Url.Action("Form", "Home")"><button id="change-detailButton">Change Details</button></a>
+    </div>
+    <div class="resume">
+        <div class="header">
+            <h1 class="name"><span id="first"></span> <span id="middle"></span> <span id="last"></span></h1>
+            <h3 class="title" id="title"></h3>
+        </div>
+        <div class="skills-section">
+            <div id="summarySection">
+                <h2>SUMMARY</h2>
+                <p class="objective" id="summaryContainer"></p>
+            </div>
+            <div id="skillsSection">
+                <h2>SKILLS</h2>
+                <div class="skills-grid" id="skills">
+                    <!-- Skills will be inserted here -->
+                </div>
+            </div>
+            <h2 class="contact">
+                <p id="address">
+                    <i class="fas fa-map-marker-alt"></i> <span id="address-text"></span>
+                </p>
+                <p id="email">
+                    <i class="fas fa-envelope"></i> <span id="email-text"></span>
+                </p>
+                <p id="cell">
+                    <i class="fas fa-phone"></i> <span id="phone-text"></span>
+                </p>
+                <p id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i> <span id="linkedin-text"></span>
+                </p>
+                <p id="github">
+                    <i class="fa-brands fa-github"></i> <span id="github-text"></span>
+                </p>
+            </h2>
+        </div>
+        <div class="content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div id="educationSection">
+                    <h2>EDUCATION</h2>
+
+                    <ul class="education-list" id="education">
+                        <!-- Education details will be inserted here -->
+                    </ul>
+                </div>
+                <div id="projectsSection">
+                    <h2>PROJECTS</h2>
+                    <ul class="projects-list" id="projects">
+                        <!-- Projects will be inserted here -->
+                    </ul>
+                </div>
+                <div id="achievementsSection">
+                    <h2>ACHIEVEMENTS</h2>
+                    <ul class="achievements-list" id="achievements">
+                        <!-- Achievements will be inserted here -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <div class="experience-section" id="experienceSection">
+                    <div class="experience-header">
+                        <h2>EXPERIENCE</h2>
+                    </div>
+                    <ul class="experience-list" id="jobs">
+                        <!-- Experience details will be inserted here -->
+                    </ul>
+                </div>
+                <div id="certificatesSection">
+                    <h2>CERTIFICATIONS</h2>
+                    <ul class="certifications-list" id="certifications">
+                        <!-- Certifications will be inserted here -->
+                    </ul>
+                </div>
+                <div id="hobbiesSection">
+                    <h2>HOBBIES</h2>
+                    <ul class="hobbies-list" id="hobbies">
+                        <!-- Hobbies will be inserted here -->
+                    </ul>
+                </div>
+                <div id="languageSection">
+                    <h2>LANGUAGES</h2>
+                    <ul class="language-list" id="languages">
+                        <!-- Languages will be inserted here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons bottom-buttons">
+        <button id="downloadBothButton">Download as PDF</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Templates</title>
+    <link rel="stylesheet" href="~/Content/main.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbarr bg-white">
+        <div class="containerr">
+            <div class="navbar-content">
+                <div class="brand-and-toggler">
+                    <a href="@Url.Action("Index", "Home")" class="navbarr-brand">
+                        <img src="~/images/logo.png" class="navbarr-brand-icon">
+                        <span class="navbarr-brand-text">Make<span>resume.</span>
+                    </a>
+                    <!--<button type="button" class="navbar-toggler-btn">
+                        <div class="bars">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </button>-->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header bg-bright" id="header">
+        <div class="container">
+            <div class="header-context text-center">
+                <h1 class="lg-little">Select your desired Template</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="template_container bg-bright">
+        <div class="wrapper">
+            <div class="container_card">
+                <div class="card" data-template="1">
+                    <img src="~/images/1.png" class="template-img">
+                    <div class="info">
+                        <h1>Resume 1</h1>
+                        <p><b>Type:</b> Modern</p>
+                        <a href="@Url.Action("Temp1", "Home")" class="btn_tem">Select Template</a>
+                    </div>
+                </div>
+                <div class="color-options">
+                    <div class="color-circle" data-color="default" style="background-color: #9c4140;"></div>
+                    <div class="color-circle" data-color="blue" style="background-color: blue;"></div>
+                    <div class="color-circle" data-color="green" style="background-color: green;"></div>
+                </div>
+            </div>
+            <div class="container_card">
+                <div class="card" data-template="2">
+                    <img src="~/images/2_t1.png" class="template-img">
+                    <div class="info">
+                        <h1>Resume 2</h1>
+                        <p><b>Type:</b> Modern</p>
+                        <a href="@Url.Action("Temp2", "Home")" class="btn_tem template-link">Select Template</a>
+                    </div>
+                </div>
+                <div class="color-options">
+                    <div class="color-circle" data-color="t1" style="background-color: #737373;"></div>
+                    <div class="color-circle" data-color="t2" style="background-color: #333;"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="~/images/3.png">
+                <div class="info">
+                    <h1>Resume 3</h1>
+                    <p><b>Type:</b> Modern</p>
+                    <a href="@Url.Action("Temp3", "Home")" class="btn_tem">Select Template</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="card">
+                <img src="~/images/4.png">
+                <div class="info">
+                    <h1>Resume 4</h1>
+                    <p><b>Type:</b> Modern</p>
+                    <a href="@Url.Action("Temp4", "Home")" class="btn_tem">Select Template</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="~/images/5.png">
+                <div class="info">
+                    <h1>Resume 5</h1>
+                    <p><b>Type:</b> Modern</p>
+                    <a href="@Url.Action("Temp5", "Home")" class="btn_tem">Select Template</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="~/images/6.png">
+                <div class="info">
+                    <h1>Resume 6</h1>
+                    <p><b>Type:</b> ATS</p>
+                    <a href="@Url.Action("Temp6", "Home")" class="btn_tem">Select Template</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="card">
+                <img src="~/images/7.png">
+                <div class="info">
+                    <h1>Resume 7</h1>
+                    <p><b>Type:</b> Modern</p>
+                    <a href="@Url.Action("Temp7", "Home")" class="btn_tem">Select Template</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="~/images/8.png">
+                <div class="info">
+                    <h1>Resume 8</h1>
+                    <p><b>Type:</b> Modern</p>
+                    <a href="@Url.Action("Temp8", "Home")" class="btn_tem">Select Template</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <footer class="footer bg-white">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="fs-15">&copy;Copyright 2024.All Rights Reserved by - <span>Make<span>resume.</span></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const containers = document.querySelectorAll(".container_card");
+            containers.forEach(container => {
+                const card = container.querySelector(".card");
+                const colorOptions = container.querySelectorAll(".color-circle");
+                colorOptions.forEach(option => {
+                    option.addEventListener("click", function () {
+                        const selectedColor = this.getAttribute("data-color");
+                        const templateId = card.getAttribute("data-template");
+                        const templateImg = card.querySelector(".template-img");
+                        templateImg.src = `/images/${templateId}_${selectedColor}.png`;
+                    });
+                });
+            });
+        });
+
+    </script>
+
+</body>
+</html>
+
+
+
+

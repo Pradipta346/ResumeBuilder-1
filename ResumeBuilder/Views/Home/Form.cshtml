@@ -1,0 +1,418 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- custom css -->
+    <link rel="stylesheet" href="~/Content/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="~/Scripts/script.js"></script>
+
+</head>
+<body>
+    <!---------------------------------------Nav Bar-------------------------------------------------------->
+    <nav class="navbarr bg-white">
+        <div class="containerr">
+            <div class="navbar-content">
+                <div class="brand-and-toggler">
+                    <a href="@Url.Action("Index", "Home")" class="navbarr-brand">
+                        <img src="~/images/logo.png" class="navbarr-brand-icon">
+                        <span class="navbarr-brand-text">Make<span>resume.</span>
+                    </a>
+                    <!--<button type="button" class="navbar-toggler-btn">
+                        <div class="bars">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </button>-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------- End of Nav Section-------------------- -->
+    <!--------------------------------------------- About Section---------------------------------------->
+    <div class="bg-white">
+        <section id="about-sc" class="">
+
+            <div class="container">
+
+                <div class="about-cnt ">
+                    <form action="" class="cv-form" id="dynamic-form">
+                        <div class="cv-form-blk">
+                            <div class="cv-form-row-title">
+                                <h3>about section</h3>
+                            </div>
+                            <div class="cv-form-row cv-form-row-about" id="about-container">
+
+                                <div class="cols-3">
+                                    <!-- First Name -->
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">First Name</label>
+                                        <input name="firstname" type="text" class="form-control firstname" id="GivenName" placeholder="Enter First Name">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <!-- Middle Name -->
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Middle Name <span class="opt-text">(optional)</span></label>
+                                        <input name="middlename" type="text" class="form-control middlename" id="MiddleName" placeholder="Enter Middle Name">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <!-- Last Name -->
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Last Name</label>
+                                        <input name="lastname" type="text" class="form-control lastname" id="FamilyName" placeholder="Enter Last Name">
+                                        <span class="form-text"></span>
+                                    </div>
+                                </div>
+
+                                <div class="cols-3">
+                                    <!-- Image -->
+                                    <div class="form-elem ">
+                                        <label for="" class="form-label">Your Image</label>
+                                        <input name="image" type="file" class="form-control image" id="profilepic" accept="image/*">
+                                    </div>
+                                    <!-- Designation -->
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Designation</label>
+                                        <input name="designation" type="text" class="form-control designation" id="designation" placeholder="Enter Designation">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <!-- Objective -->
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Objective</label>
+                                        <textarea id="objective"
+                                                  placeholder="Enter your career objective or summary"
+                                                  class="form-control objective"></textarea>
+                                        <span class="form-text"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+
+                <!-- --------------------------------------End of About Section---------------------------------------------->
+                <!-- ----------------------------------------Contact section----------------------------------------------- -->
+
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>Contact</h3>
+                    </div>
+
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-l">
+                            <div data-repeater-item>
+                                <div class="cv-form-row cv-form-row-contact" id="contact-container">
+
+                                    <div class="cols-3">
+                                        <!--  country -->
+                                        <div class="form-elem">
+                                            <label for="" class="form-label">Country Name</label>
+                                            <input name="country_code" type="text" class="form-control country_code" id="CountryCode" placeholder="Enter Phone Country code">
+                                            <span class="form-text"></span>
+                                        </div>
+                                        <!-- Home number -->
+                                        <div class="form-elem">
+                                            <label for="" class="form-label">Home Number (Optional)</label>
+                                            <input name="home_number" type="text" class="form-control home_number" id="HTelNumber" placeholder="Enter Home Number">
+                                            <span class="form-text"></span>
+                                        </div>
+                                        <!-- Work number -->
+                                        <div class="form-elem">
+                                            <label for="" class="form-label">Work Number (Optional)</label>
+                                            <input name="work_number" type="text" class="form-control work_number" id="WTelNumber" placeholder="Enter Work Number">
+                                            <span class="form-text"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="cols-3">
+                                        <!--  Cell Number -->
+                                        <div class="form-elem">
+                                            <label for="" class="form-label">Cell Number</label>
+                                            <input name="cell_number" type="text" class="form-control cell_number" id="CTelNumber" placeholder="Enter Cell Number">
+                                            <span class="form-text"></span>
+                                        </div>
+                                        <!--email -->
+                                        <div class="form-elem">
+                                            <label for="" class="form-label">Email</label>
+                                            <input name="email" type="text" class="form-control email" id="email" placeholder="Enter email">
+                                            <span class="form-text"></span>
+                                        </div>
+                                        <!-- Address -->
+                                        <div class="form-elem">
+                                            <label for="" class="form-label">Address</label>
+                                            <textarea id="AddressLine"
+                                                      placeholder="Enter your address"
+                                                      class="form-control address"></textarea>
+                                            <span class="form-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!------------------------------------------- end of Contact section----------------------------------------------- -->
+                <!----------------------------------------------- Skills Part------------------------------------------------------------------------------- -->
+
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>skills</h3>
+                    </div>
+
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-i">
+                            <div data-repeater-item>
+                                <div class="cv-form-row cv-form-row-skills">
+                                    <!-- Skills -->
+                                    <div id="SkillsContainer" class="repeater-container">
+                                        <!-- Skill fields will be dynamically added here -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" value="Add" class="repeater-add-btn" id="add-skill-btn">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </button> <!--data-repeater-create -->
+                    </div>
+                </div>
+                <!------------------------------------- End Of Skills Part---------------------------------------------------------------------- -->
+                <!------------------------------------------- Experience Part---------------------------------------------------------------------------------------------- -->
+
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>experience</h3>
+                    </div>
+
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-c" id="ExperienceContainer">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" data-repeater-create value="Add" class="repeater-add-btn" id="add-experience-btn">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+                <!----------------------------------------- End Of Experience Part-------------------------------------------------------------------------------- -->
+                <!----------------------------------------------Achievements---------------------------------------------------------- -->
+
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>achievements</h3>
+                    </div>
+
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-b" id="AchievementsContainer">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" data-repeater-create value="Add" class="repeater-add-btn" id="add-achievements-btn">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+
+                <!------------------------------------------- End of Achievements------------------------------------------------------------------------------------------- -->
+                <!------------------------------------------------- Education Part----------------------------------------------------------------------------- -->
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>education</h3>
+                    </div>
+
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-d" id="EducationContainer">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" data-repeater-create value="Add" class="repeater-add-btn" id="add-education-btn">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+                <!-------------------------------------------- End of achievements------------------------------------------------------------------------ -->
+                <!--------------------------------------------- Projects Part--------------------------------------------------------------------------------- -->
+
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>projects</h3>
+                    </div>
+
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-e" id="ProjectsContainer">
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button" data-repeater-create value="Add" class="repeater-add-btn" id="add-projects-btn">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+                <!---------------------------------------- End of Projects Part-------------------------------------------------------------------------- -->
+                <!-- ---------------------------------------Certifications Part-------------------------------------------------------------------------- -->
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>Certifications</h3>
+                    </div>
+                </div>
+
+                <div class="row-separator repeater">
+                    <div class="repeater" data-repeater-list="group-f" id="CertificateContainer">
+                    </div>
+                </div>
+                <button type="button" data-repeater-create value="Add" class="repeater-add-btn" id="add-certificate-btn">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+                <!--------------------------------------- End Of Certification Part------------------------------------------------------------------------ -->
+                <!-- -------------------------------------------Links------------------------------------------------------------------------------------------ -->
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>Social Networks</h3>
+                    </div>
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-k">
+                            <div data-repeater-item>
+                                <div class="cv-form-row cv-form-row-links">
+
+                                    <div class="cols-2">
+                                        <div class="form-elem">
+                                            <label for="" class="form-label">Linkedin<span class="opt-text">(optional)</span></label>
+                                            <input name="linkedin_link" type="text" class="form-control linkedin_link" id="linkedin_link" placeholder="Enter Your Linkedin Link">
+                                            <span class="form-text"></span>
+                                        </div>
+
+                                        <div class="form-elem">
+                                            <label for="" class="form-label">Git Hub<span class="opt-text">(optional)</span></label>
+                                            <input name="github_link" type="text" class="form-control github_link" id="github_link" placeholder="Enter Your GitHub Link">
+                                            <span class="form-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------- End Of Links------------------------------------------------------------------------------------- -->
+                <!----------------------------------------------- Other Links----------------------------------------------------------- -->
+                <div class="cv-form-blk">
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-l">
+                            <div data-repeater-item>
+                                <div class="cv-form-row cv-form-row-otherlinks">
+                                    <div id="LinksContainer" class="repeater-container">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" value="Add" class="repeater-add-btn" id="add-links-btn">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </button> <!--data-repeater-create -->
+                    </div>
+                </div>
+
+
+                <!------------------------------------------ Hobbies--------------------------------------------------------------------- -->
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>Hobbies</h3>
+                    </div>
+
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-j">
+                            <div data-repeater-item>
+                                <div class="cv-form-row cv-form-row-hobbies">
+                                    <div id="HobbiesContainer" class="repeater-container">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" value="Add" class="repeater-add-btn" id="add-hobbies-btn">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!------------------------------------------ End Of Hobbbies-------------------------------------------------------------------------- -->
+                <!------------------------------------------ Languages ---------------------------------------------------------->
+                <div class="cv-form-blk">
+                    <div class="cv-form-row-title">
+                        <h3>Spoken Languages</h3>
+                    </div>
+
+                    <div class="row-separator repeater">
+                        <div class="repeater" data-repeater-list="group-m">
+                            <div data-repeater-item>
+                                <div class="cv-form-row cv-form-row-languagesknown">
+                                    <div id="LanguagesKnownContainer" class="repeater-container">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" value="Add" class="repeater-add-btn" id="add-languagesknown-btn">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <!----------------------------------------- End of languages ------------------------------------------------->
+
+                <section class="print-btn-sc">
+                    <div class="container">
+
+                        <button type="submit" class="print-btn btn btn-primary">Select Template</button>
+                    </div>
+                </section>
+
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Footer part  -->
+    <footer class="footer bg-white">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="fs-15">&copy;Copyright 2024.All Rights Reserved by - <span>Make<span>resume.</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- jquery repeater cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js" integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <!-- custom js -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+</body>
+</html>
